@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mapper.IDeptMapper">
+
+    <select id="findAll" resultType="Dept">
+        select * from dept
+    </select>
+
+    <select id="findById" resultType="Dept" parameterType="string">
+        select * from dept where id = #{id}
+    </select>
+
+    <insert id="addInfo" parameterType="Dept">
+        insert into dept(name) values(#{name})
+    </insert>
+</mapper>

@@ -1,0 +1,6 @@
+server:
+  port: 8081
+  context-path: /cloudconsumer
+spring:
+  application:
+    name: cloudconsumer
