@@ -49,6 +49,13 @@
             <version>1.18.2</version>
             <optional>true</optional>
         </dependency>
+        <!-- 支持 nacos 动态配置 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>0.2.1.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
 
